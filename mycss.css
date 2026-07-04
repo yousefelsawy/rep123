@@ -1,0 +1,15 @@
+.class_1 {
+    color: indigo;
+}
+.background {
+    background-color: rgb(29, 29, 34);
+}
+*{
+    color:aliceblue
+}
+li img {
+    width: 800px;
+    height: 500px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
