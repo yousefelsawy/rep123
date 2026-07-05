@@ -1,5 +1,24 @@
 .class_1 {
-    color: indigo;
+    color: rgb(76, 2, 129);
+    background-color: rgba(83, 71, 71, 0.281);
+    border: 8px solid rgb(0, 0, 0);
+    width: 340px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header{
+    padding: 40px 20px;
+    text-align: center;
+}
+.header h2 {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: rgb(82, 4, 207);
+    background-color: rgba(3, 25, 32, 0.301);
+    border: 5px solid rgb(0, 0, 0);
+    margin-top: 100px;
+    padding: 10px 20px;
 }
 .background {
     background-color: rgb(29, 29, 34);
@@ -7,34 +26,28 @@
 *{
     color: aliceblue;
 }
-
-/* Article-style single-column list */
 .container {
     list-style: none;
     padding: 0;
     margin: 24px auto;
-    max-width: 900px; /* width of the article column */
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     gap: 28px;
 }
-
 .container li {
     display: block;
     background: rgba(0,0,0,0.05);
     padding: 12px;
     border-radius: 8px;
 }
-
-/* Images fill the li width and keep original aspect ratio (no zoom/crop) */
 .container li img {
     width: 100%;
-    height: auto;      /* preserve aspect ratio */
-    object-fit: contain; /* ensures the whole image is visible */
+    height: auto;
+    object-fit: contain;
     border-radius: 8px;
     display: block;
 }
-
 .container li h3 {
     margin: 0 0 8px 0;
     text-align: left;
