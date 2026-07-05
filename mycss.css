@@ -5,11 +5,37 @@
     background-color: rgb(29, 29, 34);
 }
 *{
-    color:aliceblue
+    color: aliceblue;
 }
-li img {
-    width: 800px;
-    height: 500px;
-    vertical-align: middle;
-    margin-right: 10px;
+
+/* Article-style single-column list */
+.container {
+    list-style: none;
+    padding: 0;
+    margin: 24px auto;
+    max-width: 900px; /* width of the article column */
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.container li {
+    display: block;
+    background: rgba(0,0,0,0.05);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Images fill the li width and keep original aspect ratio (no zoom/crop) */
+.container li img {
+    width: 100%;
+    height: auto;      /* preserve aspect ratio */
+    object-fit: contain; /* ensures the whole image is visible */
+    border-radius: 8px;
+    display: block;
+}
+
+.container li h3 {
+    margin: 0 0 8px 0;
+    text-align: left;
 }
